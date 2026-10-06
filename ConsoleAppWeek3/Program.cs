@@ -1,16 +1,13 @@
 ﻿using Library;
 
-Book book = new Book();
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create a new instance (object) of the Book class
+        // Note how the object name differs from the class name
+        Book book = new Book("C# for beginners", "Bill Gates", "1234567");
 
-book.Title = "C# for Beginners";
-book.Author = "Bill Gates";
-book.ISBN = "12345678";
-
-book.DisplayInfo();
-
-Book book1 = new Book();
-book1.Title = "C# Methods and classes";
-book1.Author = "Microsoft";
-book1.ISBN = "55667778";
-
-book1.DisplayInfo();
+        book.DisplayInfo();
+    }
+}
